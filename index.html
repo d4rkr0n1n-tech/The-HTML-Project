@@ -16,6 +16,7 @@
     <ol>
       <li><a href="#text">Text</a></li>
       <li><a href="#links">Links</a></li>
+      <li><a href="#tables">Tables</a></li>
     </ol>
 
     <h2 id="text">Text</h2>
@@ -38,6 +39,91 @@
         <h3>URL Links</h3>
         <a href="https://developer.mozilla.org/en-US/">MDN</a>
         <a href="text.html">Text</a>
+      </li>
+    </ul>
+
+    <h2 id="tables">Tables</h2>
+    <ul>
+      <li>
+        <table border="1">
+          <caption>
+            Table demo
+          </caption>
+          <thead>
+            <tr>
+              <th>Header 1</th>
+              <th>Header 2</th>
+              <th>Header 3</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Cell 11</td>
+              <td>Cell 12</td>
+              <td>Cell 13</td>
+            </tr>
+            <tr>
+              <td>Cell 21</td>
+              <td>Cell 22</td>
+              <td>Cell 23</td>
+            </tr>
+          </tbody>
+          <tfoot>
+            <tr>
+              <td>Cell 31</td>
+              <td>Cell 32</td>
+              <td>Cell 33</td>
+            </tr>
+          </tfoot>
+        </table>
+      </li>
+      <li>
+        <table border="3">
+          <caption>
+            Table colspan and rowspan demo
+          </caption>
+          <thead style="background-color: yellow;">
+            <tr>
+              <th>Type</th>
+              <th>Item</th>
+              <th>Quantity</th>
+              <th>Unit Price</th>
+              <th>Price</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td rowspan="2">Stationery</td>
+              <td>Pencils</td>
+              <td>2</td>
+              <td>₹1</td>
+              <td>₹2</td>
+            </tr>
+            <tr>
+              <td>Erasers</td>
+              <td>4</td>
+              <td>₹0.5</td>
+              <td>₹2</td>
+            </tr>
+          </tbody>
+          <tfoot style="background-color: green;">
+            <tr>
+              <td rowspan="3">Calculations</td>
+              <td colspan="3">Subtotal</td>
+              <td>₹4</td>
+            </tr>
+            <tr>
+              <td colspan="2">Tax</td>
+              <td>GST=18%</td>
+              <td>₹0.72</td>
+            </tr>
+            <tr>
+              <td colspan="2">Total</td>
+              <td>Subtotal+Tax</td>
+              <td>₹4.72</td>
+            </tr>
+          </tfoot>
+        </table>
       </li>
     </ul>
   </body>
