@@ -17,6 +17,7 @@
       <li><a href="#text">Text</a></li>
       <li><a href="#links">Links</a></li>
       <li><a href="#tables">Tables</a></li>
+      <li><a href="#forms">Forms</a></li>
     </ol>
 
     <h2 id="text">Text</h2>
@@ -29,6 +30,7 @@
     </ul>
 
     <h2 id="links">Links</h2>
+    <!-- Links -->
     <ul>
       <li>
         <h3>Images</h3>
@@ -43,6 +45,7 @@
     </ul>
 
     <h2 id="tables">Tables</h2>
+    <!-- Tables -->
     <ul>
       <li>
         <table border="1">
@@ -82,7 +85,7 @@
           <caption>
             Table colspan and rowspan demo
           </caption>
-          <thead style="background-color: yellow;">
+          <thead style="background-color: yellow">
             <tr>
               <th>Type</th>
               <th>Item</th>
@@ -106,7 +109,7 @@
               <td>₹2</td>
             </tr>
           </tbody>
-          <tfoot style="background-color: green;">
+          <tfoot style="background-color: green">
             <tr>
               <td rowspan="3">Calculations</td>
               <td colspan="3">Subtotal</td>
@@ -126,5 +129,66 @@
         </table>
       </li>
     </ul>
+
+    <h2 id="forms">Forms</h2>
+    <!-- Forms -->
+    <form action="/login">
+      <table>
+        <tr>
+          <th>Label</th>
+          <th>Input</th>
+        </tr>
+        <tr>
+          <!-- label doen't work for id text -->
+          <td><label for="textfield">Text: </label></td>
+          <td>
+            <input type="text" placeholder="username" id="textfield" required />
+          </td>
+        </tr>
+        <tr>
+          <td><label for="password">Password: </label></td>
+          <td>
+            <input
+              type="password"
+              placeholder="password"
+              id="password"
+              required
+            />
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label for="email">Email: </label>
+          </td>
+          <td>
+            <input type="email" placeholder="email" id="email" />
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label for="url">Url: </label>
+          </td>
+          <td>
+            <input type="url" placeholder="url" id="url" />
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label for="number">Number: </label>
+          </td>
+          <td>
+            <input type="number" placeholder="number" id="number" />
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <input type="button" value="This button does nothing" />
+          </td>
+          <td>
+            <input type="submit" value="Log me in" />
+          </td>
+        </tr>
+      </table>
+    </form>
   </body>
 </html>
