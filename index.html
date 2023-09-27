@@ -11,184 +11,251 @@
     <h1>The-HTML-Project</h1>
     <p>This project describes the various usages of HTML & concepts.</p>
 
-    <h2>Contents</h2>
     <!-- Ordered List -->
-    <ol>
-      <li><a href="#text">Text</a></li>
-      <li><a href="#links">Links</a></li>
-      <li><a href="#tables">Tables</a></li>
-      <li><a href="#forms">Forms</a></li>
-    </ol>
+    <fieldset>
+      <legend><b>Contents</b></legend>
+      <ol>
+        <li><a href="#text">Text</a></li>
+        <li><a href="#links">Links</a></li>
+        <li><a href="#tables">Tables</a></li>
+        <li><a href="#forms">Forms</a></li>
+      </ol>
+    </fieldset>
 
-    <h2 id="text">Text</h2>
     <!-- Unordered List -->
-    <ul>
-      <li>Superscript: a<sup>2</sup></li>
-      <li>Subscript: a<sub>2</sub></li>
-      <li><i>Idiomatic Phrase</i></li>
-      <li><em>Emphasis</em></li>
-    </ul>
+    <fieldset>
+      <legend id="text"><b>Text</b></legend>
+      <ul>
+        <li>Superscript: a<sup>2</sup></li>
+        <li>Subscript: a<sub>2</sub></li>
+        <li><i>Idiomatic Phrase</i></li>
+        <li><em>Emphasis</em></li>
+      </ul>
+    </fieldset>
 
-    <h2 id="links">Links</h2>
     <!-- Links -->
-    <ul>
-      <li>
-        <h3>Images</h3>
-        <img src="images\YinYang.jpg" alt="YinYang" height="250px" />
-        <img src="images\Infinity.png" alt="Infinity" height="250px" />
-      </li>
-      <li>
-        <h3>URL Links</h3>
-        <a href="https://developer.mozilla.org/en-US/">MDN</a>
-        <a href="text.html">Text</a>
-      </li>
-    </ul>
+    <fieldset>
+      <legend id="links"><b>Links</b></legend>
+      <ul>
+        <li>
+          <h3>Images</h3>
+          <img src="images\YinYang.jpg" alt="YinYang" height="250px" />
+          <img src="images\Infinity.png" alt="Infinity" height="250px" />
+        </li>
+        <li>
+          <h3>URL Links</h3>
+          <a href="https://developer.mozilla.org/en-US/">MDN</a>
+          <a href="text.html">Text</a>
+        </li>
+      </ul>
+    </fieldset>
 
-    <h2 id="tables">Tables</h2>
     <!-- Tables -->
-    <ul>
-      <li>
-        <table border="1">
-          <caption>
-            Table demo
-          </caption>
-          <thead>
-            <tr>
-              <th>Header 1</th>
-              <th>Header 2</th>
-              <th>Header 3</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>Cell 11</td>
-              <td>Cell 12</td>
-              <td>Cell 13</td>
-            </tr>
-            <tr>
-              <td>Cell 21</td>
-              <td>Cell 22</td>
-              <td>Cell 23</td>
-            </tr>
-          </tbody>
-          <tfoot>
-            <tr>
-              <td>Cell 31</td>
-              <td>Cell 32</td>
-              <td>Cell 33</td>
-            </tr>
-          </tfoot>
-        </table>
-      </li>
-      <li>
-        <table border="3">
-          <caption>
-            Table colspan and rowspan demo
-          </caption>
-          <thead style="background-color: yellow">
-            <tr>
-              <th>Type</th>
-              <th>Item</th>
-              <th>Quantity</th>
-              <th>Unit Price</th>
-              <th>Price</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td rowspan="2">Stationery</td>
-              <td>Pencils</td>
-              <td>2</td>
-              <td>₹1</td>
-              <td>₹2</td>
-            </tr>
-            <tr>
-              <td>Erasers</td>
-              <td>4</td>
-              <td>₹0.5</td>
-              <td>₹2</td>
-            </tr>
-          </tbody>
-          <tfoot style="background-color: green">
-            <tr>
-              <td rowspan="3">Calculations</td>
-              <td colspan="3">Subtotal</td>
-              <td>₹4</td>
-            </tr>
-            <tr>
-              <td colspan="2">Tax</td>
-              <td>GST=18%</td>
-              <td>₹0.72</td>
-            </tr>
-            <tr>
-              <td colspan="2">Total</td>
-              <td>Subtotal+Tax</td>
-              <td>₹4.72</td>
-            </tr>
-          </tfoot>
-        </table>
-      </li>
-    </ul>
+    <fieldset>
+      <legend id="tables"><b>Tables</b></legend>
+      <ul>
+        <li>
+          <table border="1">
+            <caption>
+              Table demo
+            </caption>
+            <thead>
+              <tr>
+                <th>Header 1</th>
+                <th>Header 2</th>
+                <th>Header 3</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Cell 11</td>
+                <td>Cell 12</td>
+                <td>Cell 13</td>
+              </tr>
+              <tr>
+                <td>Cell 21</td>
+                <td>Cell 22</td>
+                <td>Cell 23</td>
+              </tr>
+            </tbody>
+            <tfoot>
+              <tr>
+                <td>Cell 31</td>
+                <td>Cell 32</td>
+                <td>Cell 33</td>
+              </tr>
+            </tfoot>
+          </table>
+        </li>
+        <li>
+          <table border="3">
+            <caption>
+              Table colspan and rowspan demo
+            </caption>
+            <thead style="background-color: yellow">
+              <tr>
+                <th>Type</th>
+                <th>Item</th>
+                <th>Quantity</th>
+                <th>Unit Price</th>
+                <th>Price</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td rowspan="2">Stationery</td>
+                <td>Pencils</td>
+                <td>2</td>
+                <td>₹1</td>
+                <td>₹2</td>
+              </tr>
+              <tr>
+                <td>Erasers</td>
+                <td>4</td>
+                <td>₹0.5</td>
+                <td>₹2</td>
+              </tr>
+            </tbody>
+            <tfoot style="background-color: green">
+              <tr>
+                <td rowspan="3">Calculations</td>
+                <td colspan="3">Subtotal</td>
+                <td>₹4</td>
+              </tr>
+              <tr>
+                <td colspan="2">Tax</td>
+                <td>GST=18%</td>
+                <td>₹0.72</td>
+              </tr>
+              <tr>
+                <td colspan="2">Total</td>
+                <td>Subtotal+Tax</td>
+                <td>₹4.72</td>
+              </tr>
+            </tfoot>
+          </table>
+        </li>
+      </ul>
+    </fieldset>
 
-    <h2 id="forms">Forms</h2>
     <!-- Forms -->
-    <form action="/login">
-      <table>
-        <tr>
-          <th>Label</th>
-          <th>Input</th>
-        </tr>
-        <tr>
-          <!-- label doen't work for id text -->
-          <td><label for="textfield">Text: </label></td>
-          <td>
-            <input type="text" placeholder="username" id="textfield" required />
-          </td>
-        </tr>
-        <tr>
-          <td><label for="password">Password: </label></td>
-          <td>
-            <input
-              type="password"
-              placeholder="password"
-              id="password"
-              required
-            />
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <label for="email">Email: </label>
-          </td>
-          <td>
-            <input type="email" placeholder="email" id="email" />
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <label for="url">Url: </label>
-          </td>
-          <td>
-            <input type="url" placeholder="url" id="url" />
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <label for="number">Number: </label>
-          </td>
-          <td>
-            <input type="number" placeholder="number" id="number" />
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <input type="button" value="This button does nothing" />
-          </td>
-          <td>
-            <input type="submit" value="Log me in" />
-          </td>
-        </tr>
-      </table>
-    </form>
+    <fieldset>
+      <legend id="forms"><b>Forms</b></legend>
+      <form action="/login" method="get">
+        <table>
+          <tr>
+            <th>Label</th>
+            <th>Input</th>
+          </tr>
+          <tr>
+            <!-- label doen't work for id text -->
+            <td><label for="textfield">Text: </label></td>
+            <td>
+              <input type="text" placeholder="username" id="textfield" required />
+            </td>
+          </tr>
+          <tr>
+            <td><label for="password">Password: </label></td>
+            <td>
+              <input
+                type="password"
+                placeholder="password"
+                id="password"
+                required
+              />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="email">Email: </label>
+            </td>
+            <td>
+              <input type="email" placeholder="email" id="email" />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="url">Url: </label>
+            </td>
+            <td>
+              <input type="url" placeholder="url" id="url" />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="number">Number: </label>
+            </td>
+            <td>
+              <input type="number" placeholder="number" id="number" />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="notes">Textarea: </label>
+            </td>
+            <td>
+              <textarea id="notes"></textarea>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="subscribe">Checkbox: </label>
+            </td>
+            <td>
+              <input type="checkbox" name="subscribe" id="subscribe" />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="volume">Range: </label>
+            </td>
+            <td>
+              <input
+                type="range"
+                name="volume"
+                id="volume"
+                max="10"
+                min="0"
+                value="2"
+                step="2"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="skilllevel">Select: </label>
+            </td>
+            <td>
+              <select name="skilllevel" id="skilllevel">
+                <option value="1">Level 1 - Beginner</option>
+                <option value="2">Level 2 - Intermediate</option>
+                <option value="3">Level 3 - Expert</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label>Radio: </label>
+            </td>
+            <td>
+              <input type="radio" name="size" id="small" value="S" />
+              <label for="small">Small</label>
+              <input type="radio" name="size" id="medium" value="M" />
+              <label for="medium">Medium</label>
+              <input type="radio" name="size" id="large" value="L" />
+              <label for="large">Large</label>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <input type="button" value="This button does nothing" />
+            </td>
+            <td>
+              <input type="submit" value="Log me in" />
+            </td>
+          </tr>
+        </table>
+      </form>
+    </fieldset>
   </body>
 </html>
